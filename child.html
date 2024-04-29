@@ -9,6 +9,39 @@
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
 
     <style>
+        .sidenav {
+            height: 100%;
+            /* Full-height: remove this if you want "auto" height */
+            width: 160px;
+            /* Set the width of the sidebar */
+            position: fixed;
+            /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 20px;
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
         .main {
 
             display: flex;
@@ -18,7 +51,7 @@
             width: 150vh;
             height: 50vh;
             margin: 20px;
-            
+
             /* background-color: #f5f5f7; */
         }
 
@@ -36,8 +69,8 @@
             padding: 30px;
             height: 94.5vh;
             margin: 20px;
-            margin-left:50px;
-            
+            margin-left: 0;
+
         }
 
         .main-second button {
@@ -53,6 +86,14 @@
 </head>
 
 <body>
+    <div class="sidenav">
+        <img src="" alt="">
+        <h3 style="color:white; padding-left:20px">SEVA</h3>
+        <a href="#">Home</a>
+        <a href="community.html">Community</a>
+        <a href="create.html">Donate</a>
+        <a href="#">About Us</a>
+    </div>
     <div id="child-details" class="main">
         <!-- <div class="main-first"style="width:140vh">
             <div class="child-img" style="display: flex;">

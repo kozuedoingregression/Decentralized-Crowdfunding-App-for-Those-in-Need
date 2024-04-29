@@ -326,7 +326,7 @@ accesscards();
 async function getdonators() {
   let count = 0;
   const donationlist = document.getElementById("donation-list");
-  donationlist.innerHTML = " ";
+  // donationlist.innerHTML = "  <h1>RECENT DONATORS</h1>  ";
   const donators = await orphfund.connect(signer).getDonators(0);
   while (true) {
     if (donators[0][count] == undefined) break;
@@ -360,9 +360,9 @@ async function accessinfo() {
   const id = getid();
 
   e1.innerHTML +=
-    '<div class="main-first"style="width:140vh"><div class="child-img" style="display: flex;"><div class="child-img1"style="width:70vh; background-color:#f5f5f7;"><img src="' +
+    '<div class="main-first"style="width:190vh"><div class="child-img" style="display: flex;"><div class="child-img1" style="width:70vh;margin-left:20vh; background-color:#f5f5f7;"><img src="' +
     camp[id].image +
-    '" style="height:50vh; width:70vh;"alt="child_image"></div><div class="donators"style="width:68vh; margin-left:30px; background-color:#f5f5f7;"><h1 style="padding-left:20px; ">Donators</h1><ol id="donation-lists"><li>dsds</li></ol></div></div><div class="child-info"><h1 style="padding:20px;">Story</h1><p style="padding-left:20px;">' +
+    '" style="height:50vh; width:70vh;"alt="child_image"></div><div class="donators"style="width:80vh; margin-left:30px; background-color:#f5f5f7;"><h1 style="padding-left:20px; ">Donators</h1><ol id="donation-lists"><li>dsds</li></ol></div></div><div class="child-info" style="margin-left:22vh;"><h1 style="padding:20px;">Story</h1><p style="padding-left:20px;">' +
     camp[id].description +
     '</p></div></div><div class="main-second"><div class="firs"><fieldset><legend>amount raised</legend><div><h1 id="raised">0.0ETH</h1></div></fieldset></div><div class="second">	<fieldset><legend>Total supportes</legend><div><h1 id="support">0</h1></div></fieldset></div><div class="third">	<fieldset><legend>Fund</legend><form action=""><label for="">Name</label><br><input type="text" name="" id="" style="margin-bottom:10px;"><br><input type="number" id="amount-eth" placeholder="ETH 0.1"><h5>Back it because you believe in it.</h5><p>suport child for no reward, just because it speaks to you.</p></form></fieldset></div><button onclick="donate()">FUND</button></div>';
 
