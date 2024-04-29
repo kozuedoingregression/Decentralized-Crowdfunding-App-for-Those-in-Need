@@ -296,6 +296,13 @@ async function createcampaign() {
   );
 }
 
+async function addnumber()
+{
+    const camp = await orphfund.connect(signer).getCampaigns();
+    document.getElementById("raisedt").innerText= camp.length;
+}
+addnumber();
+
 async function accesscards() {
   const camp = await orphfund.connect(signer).getCampaigns();
   const e1 = document.getElementById("camp-list");
