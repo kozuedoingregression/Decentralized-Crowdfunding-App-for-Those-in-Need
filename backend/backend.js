@@ -326,7 +326,7 @@ accesscards();
 async function getdonators() {
   let count = 0;
   const donationlist = document.getElementById("donation-list");
-  // donationlist.innerHTML = "  <h1>RECENT DONATORS</h1>  ";
+ // donationlist.innerHTML = "  <h1>RECENT DONATORS</h1>  ";
   const donators = await orphfund.connect(signer).getDonators(0);
   while (true) {
     if (donators[0][count] == undefined) break;
